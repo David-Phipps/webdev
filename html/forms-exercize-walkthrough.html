@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+<h1>Register</h1>
+<!-- form inputs, key in key/pair value is name attribe, id is for css 
+group new line items by div-->
+<!-- We can also nest our select items in a label element(Birthday:) or create a label
+for each one -->
+
+
+<form>
+	<label for="first">First Name:</label>
+	<input name="first" id="first" type="text" placeholder="John" required>
+	<label for="last">Last Name:</label>
+	<input name="last" id="last" type="text" placeholder="Smith" required>
+
+	<div>
+	<label for="male">Male</label>
+	<input id="male" name="gender" type="radio" value="male">
+	<label for="female">Female</label>
+	<input id="female" name="gender" type="radio" value="female">
+	<label for="other">Other</label>
+	<input id="other" name="gender" type="radio" value="other">
+	</div>
+
+	<div>
+		<label for="email">Email: </label>
+		<input type="email" id="email" name="email" value="email" placeholder="your email" required>
+		<label for="password">Password: </label>
+		<input type="password" id="password" name="password" value="password" placeholder="password" 
+					required minlength="5" maxlength="10">
+	</div>
+
+	<div>
+		<label>
+			Birthday:
+			<select name="month">
+				<option>Month</option>
+				<option>Jan</option>
+				<option>Feb</option>
+				<option>March</option>
+			</select>
+			<select name="day">
+				<option>Day</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>				
+			</select>
+			<select name="year">
+				<option>Year</option>
+				<option>1977</option>
+				<option>1978</option>
+				<option>1979</option>	
+			</select>
+		</label>
+	</div>
+	<div>
+		<label for="terms">I agree to the terms and conditions</label>
+		<input type="checkbox" id="terms" name="terms" value="terms">
+	</div>
+
+	<input type="submit">
+</form>
+
+
+
+</body>
+
+</html>
